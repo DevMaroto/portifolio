@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background: rgba(11, 9, 12, 1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid;
+  border-radius: 10px;
+  margin: 10px;
+  padding:0 10px 0 10px;
+  background:rgba(63, 63, 63, 1);
+  opacity: 0.8;
+  
+}
+
+
+.box-img .logo {
+ width: 150px;
+ height: 150px;
+}
+
+ h1 {
+  font-size: 40px;
+  color: #ffffff;
+ }
+ 
+ h2 {
+  font-size: 40px;
+  color: #ffffff;
+ }
+
+
+ p {
+  color: #ffffff;
+ }
+ 
+ ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+ }
+
+ a {
+  text-decoration: none;
+  color: #ffffff;
+ }
+ 
+ a:hover {
+  color: #FF9800;
+ }
+
+ main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 300px;
+  
+  padding: 100px 50px 50px 50px;
+  /* background: rgba(63, 63, 63, 1); */
+ }
+ main p {
+  font-size: 20px;
+ }
+
+  .img-main {
+  border-radius: 1000px;
+  margin-left: 250px;
+ } 
+ .principal strong {
+  color:#FF9800;
+ }
+
+ .sobre {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .img-sobre {
+  border-radius: 1000px;
+  margin-right: 250px;
+ }
+
+ .sobre {
+  padding: 100px 50px 50px 50px;
+}
+
+.box-descrição p {
+  font-size: 20px;
+}
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Color Theme Swatches in RGBA 
+{ color: rgba(11, 9, 12, 1); }
+{ color: rgba(240, 239, 242, 1); }
+{ color: rgba(63, 63, 63, 1); }
+{ color: rgba(8, 140, 54, 1); }
+{ color: rgba(216, 212, 210, 1); } */
+
+/* #f47401
+#1b1b1b
+#ffffff
+#184cfc
+#ea4506 */
