@@ -12,9 +12,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
     <nav>
-      <div class="box-img">
+      <div class="box-img-logo">
         <img class="logo" src="./assets/logo_DevMaroto-removebg-preview.png" alt="">
       </div>
       <ul>
@@ -30,20 +31,22 @@
       </div>
     </nav>
   </header>
+
   <main>
-    <div class="principal">
+    <div class="box-main">
       <h1>FRONT END DEVELOPER</h1>
       <p>Olá, eu sou o <strong>Pedro</strong> vulgo <strong>Dev Maroto</strong>  <br> sou desenvolvedor front end <br> e tenho experiência web sites<br></p>
     </div>
-    <div class="img">
+    <div class="box-img">
       <img class="img-main" src="assets/picart-removebg-preview.png" alt="">
     </div>
   </main>
-  <section class="sobre">
-    <div class="foto-sobre">
-      <img class="img-sobre" src="assets/photoAbout.png" alt="">
+
+  <section class="container-about">
+    <div class="box-about-photo">
+      <img class="img-about" src="assets/photoAbout.png" alt="">
     </div>
-    <div class="box-descricao">
+    <div class="box-description">
       <h2>Sobre</h2>
       <p>
         Avançando sempre em busca de aprender novas tecnologias incluindo desenvolvimento pessoal <br>
@@ -54,11 +57,105 @@
       </p>
     </div>
   </section>
-  <section>
-    <div>
+  
+  <section class="container-project">
+    <div class="box-h3">
       <h3>Projetos</h3>
+    </div>
+
+    <div class="project-wrapper">
+
+      <div class="box-project">
+        <img src="./assets/rocketmovies.png" alt="">
+        <h2></h2>
+        <p></p>
+      </div>
+
+      <div class="box-project">
+        <img src="./assets/gitfav.png" alt="">
+        <h2></h2>
+        <p></p>
+      </div>
+
+      <div class="box-project">
+        <img src="./assets/timer.png" alt="">
+        <h2></h2>
+        <p></p>
+      </div>
+
+      <div class="box-project">
+        <img src="./assets/invertido.png" alt="">
+        <h2></h2>
+        <p></p>
+      </div>
+
+      <div class="box-project">
+        <img src="" alt="">
+        <h2></h2>
+        <p></p>
+      </div>
+
+      <div class="box-project">
+        <img src="" alt="">
+        <h2></h2>
+        <p></p>
+      </div>
+
+    </div>
+
+    <div class="box-h4">
+      <h4>Linguagens e Tecnológias</h4>
+    </div>
+
+    <div class="container-tech-language">
+      <button class="arrow-left control" aria-label="Previous image">◀</button>
+      <button class="arrow-right control" aria-label="Next Image">▶</button>
+      <div class="gallery-wrapper">
+        <div class="gallery-tech-language">
+          <img src="https://source.unsplash.com/random/250x250/?beach" alt="Beach Images" class="item current-item">
+          <img src="https://source.unsplash.com/random/250x250/?animal" alt="Animal Images" class="item">
+          <img src="https://source.unsplash.com/random/250x250/?nature" alt="Nature Images" class="item">
+          <img src="https://source.unsplash.com/random/250x250/?street" alt="Street Images" class="item">
+          <img src="https://source.unsplash.com/random/250x250/?night" alt="Night Images" class="item">
+        </div>
+      </div>
     </div>
   </section>
   
+  <section class="container-contact">
+    <div class="box-h3">
+      <h3>Gostaria de entrar em contato?</h3>
+    </div>
+
+    <form id="form">
+      <fieldset>
+        <legend>Coloque suas informações</legend>
+
+          <div class="">
+            <div>
+              <label for="name">Nome</label>
+              <input id= name type="text" required>
+            </div>
+  
+            <div>
+              <label for="email">Email</label>
+              <input id= email type="email" required>
+            </div>
+            
+            <div>
+              <label for="message">Mensagem</label>
+              <textarea id= message required></textarea>
+            </div>
+          </div>
+
+      </fieldset>
+    </form>
+    <div class="box-button">
+      <input class="button" type="submit" form="form" value="Enviar">
+    </div>
+  </section>
+
+
+  <script src="./script.js"></script>
 </body>
 </html>
