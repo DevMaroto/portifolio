@@ -49,11 +49,11 @@
     <div class="box-description">
       <h2>Sobre</h2>
       <p>
-        Avançando sempre em busca de aprender novas tecnologias incluindo desenvolvimento pessoal <br>
-        para alcançar oportunidades de trabalho na qual estou estudando. <br>
-        Além de estar estudando na Rocketseat (Explorer FullStack) <br>
-        estou combinando com o curso superior na qual a parte teórica <br>
-        irá agregar mais bagagem na minha jornada de Desenvolvedor Web onde me identifico. <br>
+        Avançando sempre em busca de aprender novas tecnologias incluindo desenvolvimento pessoal 
+        para alcançar oportunidades de trabalho na qual estou estudando.
+        Além de estar estudando na Rocketseat (Explorer FullStack)
+        estou combinando com o curso superior na qual a parte teórica 
+        irá agregar mais bagagem na minha jornada de Desenvolvedor Web onde me identifico.
       </p>
     </div>
   </section>
@@ -110,7 +110,9 @@
     <div class="container-tech-language">
       <button class="arrow-left control" aria-label="Previous image">◀</button>
       <button class="arrow-right control" aria-label="Next Image">▶</button>
+
       <div class="gallery-wrapper">
+
         <div class="gallery-tech-language">
           <img src="https://source.unsplash.com/random/250x250/?beach" alt="Beach Images" class="item current-item">
           <img src="https://source.unsplash.com/random/250x250/?animal" alt="Animal Images" class="item">
@@ -118,6 +120,7 @@
           <img src="https://source.unsplash.com/random/250x250/?street" alt="Street Images" class="item">
           <img src="https://source.unsplash.com/random/250x250/?night" alt="Night Images" class="item">
         </div>
+
       </div>
     </div>
   </section>
@@ -128,33 +131,44 @@
     </div>
 
     <form id="form">
-      <fieldset>
-        <legend>Coloque suas informações</legend>
+      <div class="fieldset-wrapper">
 
-          <div class="">
-            <div>
-              <label for="name">Nome</label>
-              <input id= name type="text" required>
+        <fieldset>
+          
+          <div class="fieldset-wrapper">
+              <legend>Coloque suas informações</legend>
+              <div class="box-name">
+                <label for="name">Nome</label>
+                <input id= name type="text" required>
+              </div>
+    
+              <div class="box-email">
+                <label for="email">Email</label>
+                <input id= email type="email" required>
+              </div>
+              
+              <div class="box-textarea">
+                <label for="message">Mensagem</label>
+                <textarea id= message required></textarea>
+              </div>
+
             </div>
   
-            <div>
-              <label for="email">Email</label>
-              <input id= email type="email" required>
-            </div>
-            
-            <div>
-              <label for="message">Mensagem</label>
-              <textarea id= message required></textarea>
-            </div>
-          </div>
+        </fieldset>
 
-      </fieldset>
+        <div class="box-button">
+          <input class="button" type="submit" form="form" value="Enviar">
+        </div>
+
+      </div>
+
+
     </form>
-    <div class="box-button">
-      <input class="button" type="submit" form="form" value="Enviar">
-    </div>
   </section>
 
+  <footer>
+    <p>© 2024 | DevMaroto</p>
+  </footer>
 
   <script src="./script.js"></script>
 </body>
