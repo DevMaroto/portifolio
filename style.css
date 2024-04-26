@@ -15,6 +15,7 @@ nav {
   align-items: center;
   border: solid;
   border-radius: 10px;
+
   margin: 10px;
   padding:0 10px 0 10px;
   background:rgba(63, 63, 63, 1);
@@ -22,18 +23,77 @@ nav {
   
 }
 
+.box-logo {
+  height:180px;
+}
+
+
+.letter-D {
+  position: absolute;
+  font-size: 110px;
+  color: #FF9800;
+  font-family: "Noto Sans Bassa Vah", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  animation: slide-br 700ms ease-in-out both;
+}
+
+.letter-M {
+  font-size: 110px;
+
+  font-family: "Noto Sans Bassa Vah", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  position: absolute;
+  top: 95px;
+  left: 100px;
+  z-index: 1;
+  
+  -webkit-animation: slide-tl 800ms ease-in-out both;
+  animation: slide-tl 1400ms 0.5s ease-in-out both;
+  
+  color: #FF9800;
+  text-shadow: -4px -4px 0 rgba(63, 63, 63, 1),  
+                  4px -4px 0 rgba(63, 63, 63, 1),
+                  -4px 4px 0 rgba(63, 63, 63, 1),
+                 4px 4px 0 rgba(63, 63, 63, 1);
+}
+
+.word-DEVMAROTO {
+  font-family: "Noto Sans Bassa Vah", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 11px;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  position: absolute;
+  left: 48px;
+  top: 100px;
+  z-index: 2;
+  color: #FF9800;
+  background: rgba(63, 63, 63, 1);
+  animation: bounce-in-fwd 3500ms 1.2s ease-in-out both;
+}
+
+
 .box-img-logo .logo {
  width: 150px;
  height: 150px;
 }
 
- h1, h2, h3, h4 {
-  font-size: 40px;
+ h1, h2, h3, h4, h5 {
+  font-size: 39px;
   color: #ffffff;
  }
  
  p {
   color: #ffffff;
+  font-size: 20px;
  }
  
  ul {
@@ -69,9 +129,9 @@ nav {
   padding: 100px 50px 50px 50px;
  }
 
- main p {
+ /* main p {
   font-size: 20px;
- }
+ } */
 
   .img-main {
   border-radius: 1000px;
@@ -99,6 +159,19 @@ nav {
   animation: glow 2s infinite alternate;
  }
 
+ .box-main {
+  display: flex;
+  width: 480px;
+  flex-direction: column;
+  gap: 20px;
+ }
+
+ .box-description {
+  display: flex;
+  width: 480px;
+  flex-direction: column;
+  gap: 20px;
+ }
 
 .box-description p {
   font-size: 20px;
@@ -107,6 +180,19 @@ nav {
 .container-project {
   display: grid;
   justify-content: center;
+}
+
+.box-h3 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.box-h4 {
+  margin-top: 63px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .project-wrapper {
@@ -125,6 +211,28 @@ nav {
   box-shadow: 0 0 10px #FF9800;
   overflow: hidden;
   transition: 0.5s;
+  background: rgba(63, 63, 63, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 6px;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+}
+
+.title-project {
+  font-weight: 800;
+}
+
+.description-title {
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .box-project:hover {
@@ -205,10 +313,6 @@ nav {
 .gallery-wrapper {
   -ms-overflow-style: none;
   scrollbar-width: none; 
-}
-
-.box-h4 {
-  margin-top: 63px;
 }
 
 .container-contact {
@@ -309,6 +413,67 @@ footer {
 }
 
 
+/*animation letter and  word*/
+@keyframes slide-tl {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-40px) translateX(-40px);
+    opacity: 1;
+  }
+}
+
+ @keyframes slide-br {
+  0% {
+    transform: translateY(-15px) translateX(-15px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(15px) translateX(15px);
+    opacity: 1;
+  }
+}
+
+ @keyframes bounce-in-fwd {
+  0% {
+    transform: scale(0);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: scale(0.7);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: scale(1.5);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: scale(0.84);
+    animation-timing-function: ease-in;
+  }
+  89% {
+    transform: scale(1.5);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: scale(0.95);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+
+/*animation box*/
 @keyframes glow-text {
   0% {
       text-shadow: 0 0 15px #FF9800;
