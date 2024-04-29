@@ -214,7 +214,6 @@ nav {
   background: rgba(63, 63, 63, 1);
   display: flex;
   flex-direction: column;
-  gap: 10px;
 
   padding: 6px;
 }
@@ -223,7 +222,9 @@ nav {
   display: flex;
   flex-direction: column;
   padding: 16px;
-  gap: 16px;
+  gap: 10px;
+  height: 215px;
+  justify-content: space-between;
 }
 
 .title-project {
@@ -233,6 +234,40 @@ nav {
 .description-title {
   font-weight: 700;
   font-size: 16px;
+}
+
+.container-button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#button-play, #button-github {
+  border: none;
+  background: transparent;
+  width: 25px;
+  height: 25px;
+}
+
+.ph-play {
+  color:#ffffff;
+  font-size: 25px;
+  transition: 0.7s;
+}
+.ph-play:hover {
+  color: #FF9800;
+  transition: 0.5s;
+}
+
+.ph-github-logo {
+  color:#ffffff;
+  font-size: 25px;
+  transition: 0.7s;
+}
+
+.ph-github-logo:hover {
+ color: #FF9800;
+ transition: 0.5s;
 }
 
 .box-project:hover {
@@ -292,11 +327,12 @@ nav {
 
 .item {
   width: 150px;
-  height: 150px;
+  height: 115px;
   flex-shrink: 0;
   opacity: 0.5;
   border: 5px solid #fff;
   transition: all 600ms ease-in-out;
+  object-fit: contain;
 }
 
 .current-item {
@@ -410,6 +446,10 @@ footer {
   border-radius: 10px;
   background:rgba(63, 63, 63, 1);
   opacity: 0.8;
+}
+
+footer p {
+  font-size: 16px;
 }
 
 
