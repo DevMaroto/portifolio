@@ -20,13 +20,13 @@
       <div class="box-logo">
         <span class="letter-D">D</span>
         <span class="letter-M">M</span>
-        <span class="word-DEVMAROTO">DEV MAROTO</span>
+        <span id="word-DEVMAROTO">DEV MAROTO</span>
       </div>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Contato</a></li>
+        <li class="home"><a href="#">Home</a></li>
+        <li class="sobre"><a href="#">Sobre</a></li>
+        <li class="projetos"><a href="#">Projetos</a></li>
+        <li class="contato"><a href="#container-contact">Contato</a></li>
       </ul>
       <div>
         <span></span>
@@ -38,20 +38,20 @@
 
   <main>
     <div class="box-main">
-      <h1>FRONT END DEVELOPER</h1>
-      <p>Olá, eu sou o <strong>Pedro</strong> vulgo <strong>Dev Maroto</strong>  <br> sou desenvolvedor front end <br> e tenho experiência web sites<br></p>
+      <h1 id="front-end-developer">FRONT END DEVELOPER</h1>
+      <p class="description-main">Olá, eu sou o <strong>Pedro</strong> vulgo <strong>Dev Maroto</strong>  <br> sou desenvolvedor front end <br> e tenho experiência web sites<br></p>
     </div>
     <div class="box-img">
-      <img class="img-main" src="assets/picart-removebg-preview.png" alt="">
+      <img class="img-main" src="assets/picart-removebg-preview.png" alt="Uma imagem do proprietário do portfólio usando um boné camisa com bolsinho do lado esquerdo, calça begé e tênis branco, ele está fazendo uma sarrada no ar está sorrindo">
     </div>
   </main>
 
   <section class="container-about">
     <div class="box-about-photo">
-      <img class="img-about" src="assets/photoAbout.png" alt="">
+      <img class="img-about" src="assets/photoAbout.png" alt="Uma imagem do proprietário usando um boné, camisa com bolsinho do lado esquerdo e está olhando para o lado esquerdo">
     </div>
     <div class="box-description">
-      <h2>Sobre</h2>
+      <h2 id="sobre">Sobre</h2>
       <p>
         Avançando sempre em busca de aprender novas tecnologias incluindo desenvolvimento pessoal 
         para alcançar oportunidades de trabalho na qual estou estudando.
@@ -64,26 +64,26 @@
   
   <section class="container-project">
     <div class="box-h3">
-      <h3>Projetos</h3>
+      <h3 id="projetos">Projetos</h3>
       <p>Projetos que realizei</p>
     </div>
 
     <div class="project-wrapper">
 
       <div class="box-project">
-        <img src="./assets/rocketmovies.png" alt="">
+        <img src="./assets/rocketmovies.png" alt="Uma imagem da aplicação rocket movies">
         <div class="text-wrapper">
           <p class="title-project">Rocket movies</p>
           <p class="description-title">
-            Uma Aplicação que você pode fazer de login, 
-            cadastro, visualizar filme, ter um perfil
-            e cadastrar filme.
+            Uma Aplicação capaz de cadastrar e avaliar seus filmes favoritos.
+            Podendo fazer o cadastro e logar, o usuário poderá cadastrar
+            o filme e poderá avaliar com um score de 0 a 5 e criar um resumo.
           </p>
           <div class="container-button">
-            <a href="" id="button-play">
+            <a href="https://desafio-rocket-movies-9dt5at2o8-devmaroto.vercel.app/" id="button-play">
               <i class="ph-bold ph-play"></i>
             </a>
-            <a href="https://github.com/phosphor-icons/homepage#phosphor-icons" id="button-github">
+            <a href="https://github.com/DevMaroto/Desafio-Rocket-Movies?tab=readme-ov-file" id="button-github">
               <i class="ph-bold ph-github-logo"></i>
             </a>
           </div>
@@ -102,10 +102,10 @@
             .
           </p>
           <div class="container-button">
-            <a href="" id="button-play">
+            <a href="https://github.com/DevMaroto/Desafio-stage-6-Git-Fav-Explorer-Turma-11" id="button-play">
               <i class="ph-bold ph-play"></i>
             </a>
-            <a href="https://github.com/phosphor-icons/homepage#phosphor-icons" id="button-github">
+            <a href="https://devmaroto.github.io/Desafio-stage-6-Git-Fav-Explorer-Turma-11/" id="button-github">
               <i class="ph-bold ph-github-logo"></i>
             </a>
           </div>
@@ -118,13 +118,15 @@
           <p class="title-project">Focus Timer</p>
           <p class="description-title">
             Um temporizador criado com intuito de utilizar 
-            a tecnica pomodoro.
+            a tecnica pomodoro. Mas não é um temporizador qualquer
+            contém modo dark e light, contém 4 toques diferentes
+            para você ter uma imersão em ambientes diversos
           </p>
           <div class="container-button">
-            <a href="" id="button-play">
+            <a href="https://devmaroto.github.io/Desafio-Focus-Timer-V2.0-ao-V3.0/" id="button-play">
               <i class="ph-bold ph-play"></i>
             </a>
-            <a href="https://github.com/phosphor-icons/homepage#phosphor-icons" id="button-github">
+            <a href="https://github.com/DevMaroto/Desafio-Focus-Timer-V2.0-ao-V3.0" id="button-github">
               <i class="ph-bold ph-github-logo"></i>
             </a>
           </div>
@@ -137,13 +139,15 @@
           <p class="title-project">Stranger Things</p>
           <p class="description-title">
             Landing page inspirada na serie da 
-            netflix stranger Things.
+            netflix stranger Things, contendo o modo dark e 
+            light e um formulário para que você possa preencher 
+            e fazer parte do clube D&D.
           </p>
           <div class="container-button">
-            <a href="" id="button-play">
+            <a href="https://devmaroto.github.io/Semana-Invertida-DIO/" id="button-play">
               <i class="ph-bold ph-play"></i>
             </a>
-            <a href="https://github.com/phosphor-icons/homepage#phosphor-icons" id="button-github">
+            <a href="https://github.com/DevMaroto/Semana-Invertida-DIO" id="button-github">
               <i class="ph-bold ph-github-logo"></i>
             </a>
           </div>
@@ -151,19 +155,15 @@
       </div>
 
       <div class="box-project">
-        <img src="" alt="">
+        <img src="./assets/spacetime.png" alt="">
         <div class="text-wrapper">
-          <p class="title-project">Rocket movies</p>
+          <p class="title-project">Space Time</p>
           <p class="description-title">
-            Uma Aplicação que você pode fazer de login, 
-            cadastro, visualizar filme, ter um perfil
-            e cadastrar filme.
+            Uma aplicação tanto na web quanto no mobile, 
+            você poderá registrar sua jornada ao longo do tempo e espaço.
           </p>
           <div class="container-button">
-            <a href="" id="button-play">
-              <i class="ph-bold ph-play"></i>
-            </a>
-            <a href="https://github.com/phosphor-icons/homepage#phosphor-icons" id="button-github">
+            <a href="https://github.com/DevMaroto/NLW-SpaceTime-Rocketseat?tab=readme-ov-file" id="button-github">
               <i class="ph-bold ph-github-logo"></i>
             </a>
           </div>
@@ -173,19 +173,13 @@
       <div class="box-project">
         <img src="./assets/AIweb.png" alt="">
         <div class="text-wrapper">
-          <p class="title-project">Git Fav</p>
+          <p class="title-project">IA 2023</p>
           <p class="description-title">
-            Uma Aplicação que você pode favoritar
-            os usuários em uma lista que você segue (pode 
-            favoritar tambem usuários que não segue) podendo
-            excluir eles da lista.
-            .
+            Aplicação capaz de realizar upload de videos por meio da AI, 
+            gerar automaticamente títulos e descrições interesantes.
           </p>
           <div class="container-button">
-            <a href="" id="button-play">
-              <i class="ph-bold ph-play"></i>
-            </a>
-            <a href="https://github.com/phosphor-icons/homepage#phosphor-icons" id="button-github">
+            <a href="https://github.com/DevMaroto/NLW-IA-2023" id="button-github">
               <i class="ph-bold ph-github-logo"></i>
             </a>
           </div>
@@ -221,9 +215,9 @@
     </div>
   </section>
   
-  <section class="container-contact">
+  <section id="container-contact">
     <div class="box-h3">
-      <h5>Gostaria de entrar em contato?</h5>
+      <h5 id="contact">Gostaria de entrar em contato?</h5>
     </div>
 
     <form id="form">
