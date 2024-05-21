@@ -124,7 +124,7 @@ nav {
  
  p {
   color: var(--text-color);
-  font-size: clamp(1rem, 2.5vw, 2rem);
+  font-size: clamp(1.6rem, 1vw, 2rem);
  }
  
  ul {
@@ -229,6 +229,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .box-h4 {
@@ -338,6 +339,7 @@ nav {
   position: relative;
   padding: 1.5rem;
   max-width: 84rem;
+  margin: 3rem auto 0;
 }
 
 .gallery-wrapper {
@@ -649,7 +651,7 @@ footer p {
     position: relative;
     padding: 1.5rem;
     max-width: 84rem;
-    margin: 0 auto;
+    margin: 3rem auto 0;
   }
 }
 
@@ -681,11 +683,18 @@ footer p {
   ul {
     display: none;
   }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 2.8rem;
+  }
 
   main {
     display: flex;
     flex-direction: column;
     gap: 6rem;
+  }
+
+  .box-main {
+    padding: 0 10rem 0 10rem;
   }
   
   .container-about {
@@ -698,6 +707,10 @@ footer p {
     width: 80%;
   }
 
+  .box-description {
+    padding: 0 10rem 0  10rem;
+  }
+
   .box-project-video {
     max-width: 51.0rem;
   }
@@ -706,7 +719,10 @@ footer p {
     position: relative;
     padding: 1.5rem;
     max-width: 31rem;
-    margin: 0 auto;
+    margin: 3rem auto 0;
+  }
+  #container-contact, #form {
+    width: 32.5rem;
   }
 }
  
