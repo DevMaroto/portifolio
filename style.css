@@ -225,7 +225,7 @@ nav {
   animation: glow-text 2s infinite alternate;
  }
 
- .container-about {
+ #container-about {
   display:flex;
   justify-content: center;
   align-items: center;
@@ -255,7 +255,7 @@ nav {
   animation: slide-left 8s 1.0s ease-in-out both;
  }
 
-.container-project {
+#container-project {
   display: grid;
   width: 34rem;
   margin: 0 auto;
@@ -686,7 +686,7 @@ footer p {
     visibility: hidden;
   }
 
-  .container-project {
+  #container-project {
     margin: 0 auto;
     width: 113rem;
   }
@@ -712,7 +712,7 @@ footer p {
     visibility: hidden;
    } 
 
-  .container-project {
+  #container-project {
     display: grid;
     width: 72rem;
     margin: 0 auto;
@@ -827,7 +827,7 @@ footer p {
     padding: 0 10rem 0 10rem;
   }
   
-  .container-about {
+  #container-about {
     display: flex;
     flex-direction: column;
     gap: 6rem;
