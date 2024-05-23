@@ -22,17 +22,31 @@
         <span class="letter-M">M</span>
         <span id="word-DEVMAROTO">DEV MAROTO</span>
       </div>
-      <ul>
+      <ul id="nav-main">
         <li class="home"><a href="#">Home</a></li>
         <li class="sobre"><a href="#">Sobre</a></li>
         <li class="projetos"><a href="#">Projetos</a></li>
         <li class="contato"><a href="#container-contact">Contato</a></li>
       </ul>
-      <div>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <div class="checkbox-container">
+        <div class="checkbox-wrapper">
+            <input type="checkbox" id="toggle">
+            <label class="checkbox" for="toggle">
+                <div class="trace"></div>
+                <div class="trace"></div>
+                <div class="trace"></div>
+            </label>
+            <div class="menu-hamburguer"></div>
+            <div class="menu-items-hamburguer">
+              <ul class="ul-menu-hamburguer">
+                  <li class="home-menu-hamburguer"><a href="#">Home</a></li>
+                  <li class="sobre-menu-hamburguer"><a href="#">Sobre</a></li>
+                  <li class="projetos-menu-hamburguer"><a href="#">Projetos</a></li>
+                  <li class="contato-menu-hamburguer"><a href="#">Contato</a></li>
+              </ul>
+            </div>   
+        </div>
+    </div>
     </nav>
   </header>
 
@@ -253,7 +267,7 @@
         </fieldset>
 
         <div class="box-button">
-          <input class="button" type="submit" form="form" value="Enviar">
+          <input id="button" type="submit" form="form" value="Enviar">
         </div>
 
       </div>
