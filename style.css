@@ -737,7 +737,6 @@ footer p {
 
 @media (max-width: 768px) {
    
-  
   .checkbox-container {
     visibility: visible;
   }
@@ -825,6 +824,7 @@ footer p {
 
   .box-main {
     padding: 0 10rem 0 10rem;
+    z-index: -1;
   }
   
   #container-about {
@@ -839,6 +839,7 @@ footer p {
 
   .box-description {
     padding: 0 10rem 0  10rem;
+    z-index: -1;
   }
 
   .box-h3 {
@@ -854,6 +855,7 @@ footer p {
     padding: 1.5rem;
     max-width: 31rem;
     margin: 3rem auto 0;
+    z-index: -1;
   }
   #container-contact, #form {
     width: 32.5rem;
