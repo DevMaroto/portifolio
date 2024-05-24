@@ -855,8 +855,11 @@ footer p {
     padding: 1.5rem;
     max-width: 31rem;
     margin: 3rem auto 0;
+  }
+  .current-item {
     z-index: -1;
   }
+
   #container-contact, #form {
     width: 32.5rem;
   }
